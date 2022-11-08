@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+
+	head
+
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description' content='')
+		meta(name='author' content='')
+
+		include includes/title.pug
+
+		link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+
+		include includes/css.pug
+
+	body
+
+		include includes/navbar.pug
+
+		// Page Header
+		header.masthead(style="background-image: url('assets/img/post-bg.jpg')")
+			.container.position-relative.px-4.px-lg-5
+				.row.gx-4.gx-lg-5.justify-content-center
+					.col-md-10.col-lg-8.col-xl-7
+						.post-heading
+							h1 Proporciones
+							h2.subheading Definidas y múltiples
+							span.meta
+
+								a(href='#!') Dylan Buitrago 
+								| en Noviembre, 2022
+
+		// Post Content
+		article.mb-4
+			.container.px-4.px-lg-5
+				.row.gx-4.gx-lg-5.justify-content-center
+					.col-md-10.col-lg-8.col-xl-7
+						p
+							| En el dia de hoy estudiaremos dos de las leyes estequiométricas, la ley de las proporciones definidas y la de las proporciones múltiples.
+						h2.section-heading Ley de las proporciones definidas
+						p
+							| La ley de las proporciones definidas enunciada en el año de 1799, según la cual:
+						blockquote.blockquote
+							| Cuando se combinan dos o más elementos paradar un compuesto determinado, siempre lo hacenen la misma proporción fija, con independencia de su estado físico y de la manera de obtenerlo.
+						p
+							| Para ver cómo se cumple la Ley de Proust, considere el compuesto agua: El agua contiene dos átomos de hidrógeno (H) por cada átomo de oxígeno (O), unhecho que puede representarse simbólicamente por una fórmula química, laconocida fórmula H2O. Las dos muestras descritas a continuación tienen lasmismas proporciones los dos elementos, expresadas como porcentajes enmasa. Por ejemplo, para determinar el porcentaje en masa de hidrógeno, simplemente sedivide la masa de hidrógeno por la masa de la muestra y se multiplica por 100. Encada muestra se obtendrá el mismo resultado: 11,9 por ciento de H.
+						img.img-fluid(src='https://cpsc.edu.co/wp-content/uploads/2019/08/Qui%CC%81mica_09.jpg')
+						span.caption.text-muted
+							| Ejemplo con el H²O.
+						h2.section-heading Ley de las proporciones mùltiples
+						p
+							| Enunciada por John Dalton, en el año 1803, Fuedemostrada en la práctica por el químico francés Gay-Lussac. Dice:
+						blockquote.blockquote
+							| Cuando dos o más elementos se combinan paradar más de un compuesto, una masa variable deuno de ellos se une a una masa fija del otro, y laprimera tiene como relación números canónicos e indistintos.
+						p
+							| Esta ley afirma que cuando dos elementos se combinan para originardistintos compuestos, dada una cantidad fija de uno de ellos, las  diferentescantidades del otro que se combinan con  dicha  cantidad fija para dar comoproducto los compuestos, están en relación de números enteros sencillos.
+						p
+							| Por ejemplo, el cobre y el oxígeno pueden combinarse para formar dos óxidos de cobre distintos: el CuO y el Cu2O. En el caso del primer compuesto, 3,973 gramos de  cobre  se  combinan   con un   gramo  de   oxígeno.  En  el   segundo  caso,   7,945 gramos   de   cobre   se   unen   a   cada  gramo   de  oxígeno.  Si   hacemos   la   relación 7,945/3,973, obtenemos un número entero sencillo, tal como predijo Dalton
+						img.img-fluid(src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdsuOFjQeqYvk0X5RFC2ipoGrsSGrdN5LVvf_VyC1GKI0mMAjT')
+						span.caption.text-muted
+							| Ejemplo con el Oxido de cobre.
+						p
+							|	Información apoyada en 
+							a(href='https://culturacientifica.com/2019/04/29/la-ley-de-proporciones-definidas-y-la-unidad-de-masa-atomica/' target='_blank') Cultura Científica
+
+		include includes/footer.pug
+
+		include includes/scripts.pug

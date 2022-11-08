@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+
+	include includes/variables.pug
+
+	head
+
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description' content='')
+		meta(name='author' content='')
+
+		include includes/title.pug
+
+		link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+
+		include includes/css.pug
+
+	body
+
+		include includes/navbar.pug
+
+		// Page Header
+		header.masthead(style="background-image: url('assets/img/home-bg.jpg')")
+			.container.position-relative.px-4.px-lg-5
+				.row.gx-4.gx-lg-5.justify-content-center
+					.col-md-10.col-lg-8.col-xl-7
+						.site-heading
+							h1 Tu Blog De Química
+							span.subheading Bienvenido Al Mundo De La Química
+
+		// Main Content
+		.container.px-4.px-lg-5
+			.row.gx-4.gx-lg-5.justify-content-center
+				.col-md-10.col-lg-8.col-xl-7
+
+					each n, i in posts
+						.post-preview
+							a(href='post-' + i + '.html')
+								h2.post-title= n 
+								h3.post-subtitle= subTitles[i] 
+							p.post-meta
+								| Posteado por
+								a(href='#!') Dylan Buitrago 
+								| en Noviembre, 2022
+
+						hr.my-4
+
+		include includes/footer.pug
+
+		include includes/scripts.pug

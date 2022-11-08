@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        include includes/title.pug
+
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body
+
+        include includes/navbar.pug
+
+        // Page Header
+        header.masthead(style="background-image: url('assets/img/about-bg.jpg')")
+            .container.position-relative.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-md-10.col-lg-8.col-xl-7
+                        .page-heading
+                            h1 ¿Quién Soy Yo?
+                            span.subheading Un poco de mi
+
+        // Main Content
+        main.mb-4
+            .container.px-4.px-lg-5
+                .row.gx-4.gx-lg-5.justify-content-center
+                    .col-md-10.col-lg-8.col-xl-7
+                        p
+                            | Sean todos bienvenidos a mi blog. Mi nombre es Dylan Roman estudiante de segundo semestre en la carrera de Ing. Informática en la UNET
+                        p
+                            | Por Medio de este blog hablaremos un poco del mundo de la química, con el fin de adentrarnos en la materia.
+                        p
+                            | Espero que les guste...
+
+        include includes/footer.pug
+
+        include includes/scripts.pug

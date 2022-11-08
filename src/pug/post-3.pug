@@ -1,0 +1,101 @@
+doctype html
+html(lang='en')
+
+	head
+
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='description' content='')
+		meta(name='author' content='')
+
+		include includes/title.pug
+
+		link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+
+		include includes/css.pug
+
+	body
+
+		include includes/navbar.pug
+
+		// Page Header
+		header.masthead(style="background-image: url('assets/img/post-bg.jpg')")
+			.container.position-relative.px-4.px-lg-5
+				.row.gx-4.gx-lg-5.justify-content-center
+					.col-md-10.col-lg-8.col-xl-7
+						.post-heading
+							h1 Las Mezclas
+							h2.subheading Qué son y sus características 
+							span.meta
+								| Posteado por
+								a(href='#!') Dylan Buitrago 
+								| en Noviembre, 2022
+
+		// Post Content
+		article.mb-4
+			.container.px-4.px-lg-5
+				.row.gx-4.gx-lg-5.justify-content-center
+					.col-md-10.col-lg-8.col-xl-7
+						p
+							| Una mezcla se forma por la unión de dos o más sustancias en diversas proporciones. La mezcla  formada presenta características propias diferentes a las de sus componentes; estas características varían según las proporciones en que se encuentran las sustancias que la forman.
+						h2.section-heading Características
+						p
+							| Las mezclas tienen ciertas propiedades y características que se conservan y son invariables, como por ejemplo:
+						ul
+							li
+								| Sus componentes se mezclan de manera física, pero no química.
+							li
+								| La separación de los componentes se hace mediante distintas técnicas a través de las cuales se obtiene cada elemento de manera individual.
+							li
+								| Los componentes están presentes en proporciones variables y esas variaciones son indefinidas.
+							li
+								| Puede tener una naturaleza heterogénea u homogénea.
+							li
+								| De acuerdo a los componentes, cada tipo de mezcla tiene un punto específico de ebullición y de fusión.
+							li
+								| Cuando las mezclas se forman, no ocurren cambios de energía.
+							li
+								| Cualquier estado de la materia (sólido, líquido o gaseoso) se puede combinar entre sí para formar una mezcla.
+						h2.section-heading Métodos de Separación
+						p
+							| Ahora bien podemos clasificar los metodos de separación de la siguiente manera:
+						h3.section3-heading De sólidos (S – S)
+						p
+							| #[b Tamizado:] El método de tamizado o separación manual, se emplea cuando la mezcla está conformada por partículas de diferentes tamaños.  Para ejecutar el tamizaje, se hace pasar la mezcla por un tamiz, por cuyas aberturas caerán las partículas más pequeñas, quedando el material más grueso dentro del tamiz.
+						img.img-fluid(src='https://cdn-blog1.fibrasynormasdecolombia.com/wp-content/uploads/2018/05/tamizado.gif')
+						span.caption.text-muted Ilustración del tamizado
+						p
+							| #[b Levigación:] La levigación es el método de separación que consiste en pulverizar una mezcla sólida para posteriormente tratarla con un disolvente; este tipo de separación se realiza basándose en la diferencia de densidades de las sustancias que componen la mezcla.
+						p
+							| #[b Imantación:] Consiste en realizar la separación mediante las propiedades magnéticas presentes en las sustancias que la conforman, se debe utilizar un material que contenga un campo magnético que permita separar las sustancias metálicas en la mezcla, como la extracción de las limaduras de hierro en una mezcla con arena.
+						img.img-fluid(src='https://cdn-blog1.fibrasynormasdecolombia.com/wp-content/uploads/2018/05/Imantacion.jpg')
+						span.caption.text-muted Ilustración de la Imantación
+						h3.section3-heading Sólidas y líquidas (S – L)
+						p
+							| #[b Decantación:] El aparato utilizado en el proceso se conoce como embudo de decantación; para poder separar dos fases por medio de la decantación, la mezcla se deja en reposo hasta que la sustancia con mayor densidad se deposite en el fondo.
+						img.img-fluid(src='https://pbs.twimg.com/media/CbWGjndWwAE2MjX?format=jpg&name=small')
+						span.caption.text-muted Ilustración de la decantación
+						p
+							| #[b Filtración:] La filtración se emplea para separar un sólido insoluble presente en un líquido. El estado de subdivisión del sólido es tal que lo obliga a quedar retenido en un filtro por donde se pasa la mezcla. En el proceso de filtración, se hace pasar la mezcla heterogénea a través de un filtro con un tamaño de poro adecuado, el sólido que queda atrapado en el papel filtro se conoce como residuo y la sustancia que pasa a través del papel se denomina filtrado.
+						img.img-fluid(src='https://cdn-blog1.fibrasynormasdecolombia.com/wp-content/uploads/2018/05/filtracion.jpg')
+						span.caption.text-muted Ilustración de la Filtración
+						p
+							| #[b Centrifugación:] Es un método que separa un sólido insoluble de grano muy fino y de difícil sedimentación de una sustancia líquida, la centrifugación consiste en someter una mezcla heterogénea a la acción de la fuerza centrífuga girando el recipiente que contiene la mezcla a gran velocidad, generando que el sólido sea depositado en el fondo del recipiente, mientras que el componente líquido queda hacia la parte superior del recipiente y puede ser separado mediante decantación.
+						h3.section3-heading De Líquidos (L – L)
+						p
+							| #[b Destilación:] Inicia aplicando altas temperaturas a la mezcla que se desea separar, el líquido más volátil se evaporará primero, quedando el otro en estado puro, posteriormente, la fase evaporada se recupera mediante condensación aplicando disminución de la temperatura.
+						img.img-fluid(src='https://cdn-blog1.fibrasynormasdecolombia.com/wp-content/uploads/2018/05/destilacion.jpg')
+						span.caption.text-muted Ilustración de la Destilación
+						p
+							| #[b Cromatografía:] Los métodos cromatográficos existentes pueden ser: papel, capa fina, columnas y gases. Todos, emplean como principio de funcionamiento la propiedad de capilaridad por la cual una sustancia se desplaza (fase móvil) a través de un medio determinado conocido como fase estacionaria.
+						p
+							| Para que la fase móvil se pueda desplazar por la fase estacionaria debe existir atracción entre ellas; la intensidad de la atracción varía de una sustancia a otra, por lo que el desplazamiento de la sustancia se realiza a diferentes velocidades. La cromatografía, aprovecha las diferencias de solubilidad entre las sustancias para poder efectuar la separación: el componente más soluble se desplaza más rápido mientras que los demás componentes quedan rezagados. 
+						img.img-fluid(src='https://cdn-blog1.fibrasynormasdecolombia.com/wp-content/uploads/2018/05/cromatografia.jpg.webp')
+						span.caption.text-muted Ilustración de la Cromatografía
+						p
+							|	Información apoyada en 
+							a(href='https://conceptoabc.com/mezclas/#Propiedades_y_caracteristicas' target='_blank') Las Mezclas
+
+		include includes/footer.pug
+
+		include includes/scripts.pug
